@@ -11,7 +11,8 @@ function T = ComputeATT(A,j)
     
     %Compute stationary probabilities:
     pi_ = degree/K;
-    %Extract eigenvectors and eigenvalues, sorting them in decrescent order
+    
+    %Extract eigenvectors and eigenvalues, sorting them in decrescent order:
     [psi,lambda] = eig(S);
     lambda = rot90(lambda,2);
     lambda = diag(lambda);
